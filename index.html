@@ -2500,7 +2500,7 @@
         <div class="card" id="git-section">
           <br>
           <h1>Git</h1>
-          <div id="git-section-configurations">
+          <div id="git-section-configurations-title">
             <section class="card-box" id="git-section-configurations">
               <h2>Configurations</h2>
             </section>
@@ -2796,13 +2796,99 @@
               </div>
             </section>
           </div>
-          <div id="git-section-notes">
+          <div id="git-section-notes"> 
             <section class="card-box" id="git-section-notes">
               <ul>
                 <h3>Enter your Git notes here...</h3>
                 <br>
-                <li>git status: checks what branch we are currently on</li>
-                <li>git checkout -b branch-name: creates a new branch and switches to it</li>
+                <li>Navigate to the root folder</i>
+                  <section class="card-code" id="git-section-notes-code-snipp-root">
+                    <p>
+                      <span class="token-comment">bub2k@JM_HP_Laptop</span>
+                      <span class="token-conditional">MINGW64</span>
+                      <span class="token-punctuation">~</span><br>
+                      <span class="token-operator">$ cd bootcamp</span><br>
+                    </p>
+                  </section>
+                <li>Navigate to the project folder</li>
+                <section class="card-code" id="git-section-notes-code-snipp-project">
+                  <p>
+                    <span class="token-comment">bub2k@JM_HP_Laptop</span>
+                    <span class="token-conditional">MINGW64</span>
+                    <span class="token-punctuation">~/bootcamp</span><br>
+                    <span class="token-operator">$ cd prework-study-guide</span><br>
+                  </p>
+                </section>
+                <li>Stages all changes</li>
+                <section class="card-code" id="git-section-notes-code-snipp">
+                  <p>
+                    <span class="token-comment">bub2k@JM_HP_Laptop</span>
+                    <span class="token-conditional">MINGW64</span>
+                    <span class="token-punctuation">~/bootcamp/prework-study-guide</span>
+                    <span class="token-keyword">(feature/add-js)</span><br>
+                    <span class="token-operator">$ git add -A</span>
+                  </p>
+                </section>
+                <li>Commit changes to local branch as a save point</li>
+                <section class="card-code" id="git-section-notes-code-snipp">
+                  <p>
+                    <span class="token-comment">bub2k@JM_HP_Laptop</span>
+                    <span class="token-conditional">MINGW64</span>
+                    <span class="token-punctuation">~/bootcamp/prework-study-guide</span>
+                    <span class="token-keyword">(feature/add-js)</span><br>
+                    <span class="token-operator">$ git commit -m "added JS to project"</span>
+                  </p>
+                </section>
+                <li>Downloads new changes from the branch named master on the remote named origin and integrates them into your local HEAD branch</li>
+                <section class="card-code" id="git-section-notes-code-snipp">
+                  <p>
+                    <span class="token-comment">bub2k@JM_HP_Laptop</span>
+                    <span class="token-conditional">MINGW64</span>
+                    <span class="token-punctuation">~/bootcamp/prework-study-guide</span>
+                    <span class="token-keyword">(feature/add-js)</span><br>
+                    <span class="token-operator">$ git pull origin main</span>
+                  </p>
+                </section>
+                <li>Pushes changes to the original branch(MAIN) from the featured branch</li>
+                <section class="card-code" id="git-section-notes-code-snipp">
+                  <p>
+                    <span class="token-comment">bub2k@JM_HP_Laptop</span>
+                    <span class="token-conditional">MINGW64</span>
+                    <span class="token-punctuation">~/bootcamp/prework-study-guide</span>
+                    <span class="token-keyword">(feature/add-js)</span><br>
+                    <span class="token-operator">$ git push origin feature/add-js</span>
+                  </p>
+                </section>
+                <li>Updates the local branch from the (MAIN) or head</li>
+                <section class="card-code" id="git-section-notes-code-snipp">
+                  <p>
+                    <span class="token-comment">bub2k@JM_HP_Laptop</span>
+                    <span class="token-conditional">MINGW64</span>
+                    <span class="token-punctuation">~/bootcamp/prework-study-guide</span>
+                    <span class="token-keyword">(feature/add-js)</span><br>
+                    <span class="token-operator">$ git pull origin main</span>
+                  </p>
+                </section>
+                <li>Create new branch and switch to it</li>
+                <section class="card-code" id="git-section-notes-code-snipp">
+                  <p>
+                    <span class="token-comment">bub2k@JM_HP_Laptop</span>
+                    <span class="token-conditional">MINGW64</span>
+                    <span class="token-punctuation">~/bootcamp/prework-study-guide</span>
+                    <span class="token-keyword">(feature/add-js)</span><br>
+                    <span class="token-operator">$ git checkout -b feature/project-README</span>
+                  </p>
+                </section>
+                <li>Checks what branch we are currently on</li>
+                <section class="card-code" id="git-section-notes-code-snipp">
+                  <p>
+                    <span class="token-comment">bub2k@JM_HP_Laptop</span>
+                    <span class="token-conditional">MINGW64</span>
+                    <span class="token-punctuation">~/bootcamp/prework-study-guide</span>
+                    <span class="token-keyword">(feature/add-js)</span><br>
+                    <span class="token-operator">$ git status</span>
+                  </p>
+                </section>
               </ul>
             </section>
           </div>
