@@ -143,7 +143,7 @@ tr:nth-child(even) {
 }
 
 .token-class-name-known {
-
+    color: sienna;
 }
 
 .token-language {
@@ -156,4 +156,12 @@ tr:nth-child(even) {
 
 .token-class-name-user {
     color:darkcyan;
+}
+
+.token-class-name {
+    color:tomato
+}
+
+.token-black {
+    color: ;
 }
