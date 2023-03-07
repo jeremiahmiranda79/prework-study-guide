@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Prework Study Guide</title>
+
+
+    <style>
+      .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+      
+      .active, .collapsible:hover {
+        background-color: #555;
+      }
+      
+      .collapsible:after {
+        content: '\002B';
+        color: white;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+      
+      .active:after {
+        content: "\2212";
+      }
+      
+      .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+      }
+      </style>
+  </head>
+  
+  <body>
+    <header id="header-top">
+      <h1>Prework Study Guide</h1>
+      <img src="../assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie."/>
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
+      <br>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/bash.html">Bash</a></li>
+          <li><a href="../pages/html.html">HTML</a></li>
+          <li><a href="../pages/css.html">CSS</a></li>
+          <li><a href="../pages/git.html">Git</a></li>
+          <li><a href="../pages/javascript.html">JavaScript</a></li>
+        </ul>
+      </nav>
+      <br>
+    </header>
+    <main> 
+      <div id="bash-section">
+        <div class="card" id="bash-section">
+          <h1>Bash</h1>          
+          <section id="bash-section-commands">
+            <section class="card-box" id="bash-section-commands">
+              <h2>Bash Commands</h2>
+            </section>
+            <section class="card" id="bash-section-commands">
+              <button class="collapsible">Open Collapsible</button>
+              <div class="content">
+                <table>
+                  <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                  </tr>      
+                  <tr>
+                    <td>|</td>
+                    <td>Pipe</td>
+                  </tr>
+                  <tr>
+                    <td>&gt;</td>
+                    <td>Redirect stdout</td>
+                  </tr> 
+                  <tr>
+                    <td>cat</td>
+                    <td>Read a file, create a file, and concatenate files</td>
+                  </tr> 
+                  <tr>
+                    <td>cd</td>
+                    <td>Change directory</td>
+                  </tr>
+                  <tr>
+                    <td>chmod</td>
+                    <td>Sets the file permissions flag on a file or folder</td>
+                  </tr>
+                  <tr>
+                    <td>clear</td>
+                    <td>Clear your terminal window</td>
+                  </tr>
+                  <tr>
+                    <td>compgen</td>
+                    <td>Shows all available commands, aliases, and functions</td>
+                  </tr>
+                  <tr>
+                    <td>cp</td>
+                    <td>Copy files and directories</td>
+                  </tr>
+                  <tr>
+                    <td>echo</td>
+                    <td>Prints text to the terminal window</td>
+                  </tr>
+                  <tr>
+                    <td>exit</td>
+                    <td>Exit out of a directory</td>
+                  </tr>
+                  <tr>
+                    <td>grep</td>
+                    <td>Search</td>
+                  </tr>
+                  <tr>
+                    <td>head</td>
+                    <td>Read the start of a file</td>
+                  </tr>   
+                  <tr>
+                    <td>history</td>
+                    <td>List your most recent commands</td>
+                  </tr>     
+                  <tr>
+                    <td>kill</td>
+                    <td>Terminate stalled processes</td>
+                  </tr>
+                  <tr>
+                    <td>less</td>
+                    <td>view the contents of a text file</td>
+                  </tr>         
+                  <tr>
+                    <td>locate</td>
+                    <td>Locate a specific file or directory</td>
+                  </tr>
+                  <tr>
+                    <td>ls</td>
+                    <td>List directory contents</td>
+                  </tr>     
+                  <tr>
+                    <td>man</td>
+                    <td>Print manual or get help for a command</td>
+                  </tr>        
+                  <tr>
+                    <td>mkdir</td>
+                    <td>Create a directory</td>
+                  </tr>       
+                  <tr>
+                    <td>mv</td>
+                    <td>Move or rename directory</td>
+                  </tr>     
+                  <tr>
+                    <td>pwd</td>
+                    <td>Print working directory</td>
+                  </tr>
+                  <tr>
+                    <td>rmdir</td>
+                    <td>Remove directory</td>
+                  </tr>            
+                  <tr>
+                    <td>sleep</td>
+                    <td>Delay a process for a specified amount of time</td>
+                  </tr>            
+                  <tr>
+                    <td>tail</td>
+                    <td>Read the end of a file</td>
+                  </tr>
+                  <tr>
+                    <td>touch</td>
+                    <td>Creates a file</td>
+                  </tr>        
+                </table>
+              </div>   
+            </section>
+          </section>
+          <section class="card-box" id="bash-section-notes">
+            <h3>Enter your Bash notes here...</h3> 
+            <ul>
+              <li>....</li>
+              <li>....</li>
+            </ul>
+          </section>
+          <section class="card-box" id="bash-section-foot">
+            <a href="https://www.educative.io/blog/bash-shell-command-cheat-sheet">Learn more about bash commands here!</a>
+          </section>
+        </div>  
+      </div>
+    </main>
+    <footer>
+      <h2>I can code!</h2>
+    </footer>
+
+    <script src="../assets/script.js"></script>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+      </script>
+
+  </body> 
+</html>

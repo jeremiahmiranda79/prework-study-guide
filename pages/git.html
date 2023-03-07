@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Prework Study Guide</title>
+
+
+    <style>
+      .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+      
+      .active, .collapsible:hover {
+        background-color: #555;
+      }
+      
+      .collapsible:after {
+        content: '\002B';
+        color: white;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+      
+      .active:after {
+        content: "\2212";
+      }
+      
+      .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+      }
+      </style>
+  </head>
+  
+  <body>
+    <header id="header-top">
+      <h1>Prework Study Guide</h1>
+      <img src="../assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie."/>
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
+      <br>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/bash.html">Bash</a></li>
+          <li><a href="../pages/html.html">HTML</a></li>
+          <li><a href="../pages/css.html">CSS</a></li>
+          <li><a href="../pages/git.html">Git</a></li>
+          <li><a href="../pages/javascript.html">JavaScript</a></li>
+        </ul>
+      </nav>
+      <br>
+    </header>
+    <main> 
+      <div id="git-section">
+        <div class="card" id="git-section">
+          <br>
+          <h1>Git</h1>
+          <section class="card-box">
+            <h2>What is Git?</h2>
+            <br>
+            <p>Git is a version control system used for tracking changes in computer files. It is generally used for source code management in software development</p>
+            <br>
+            <ul>
+              <li>Git is used to tracking changes in the source code</li>
+              <li>The distributed version control tool is used for source code management</li>
+              <li>It allows multiple developers to work together</li>
+              <li>It supports non-linear development through its thousands of parallel branches</li>
+            </ul>
+            <br>
+            <h2>Features of Git</h2>
+            <br>
+            <ul>
+              <li>Tracks history</li>
+              <li>Free and open source</li>
+              <li>Supports non-linear development</li>
+              <li>Creates backups</li>
+              <li>Scalable</li>
+              <li>Supports collaboration</li>
+              <li>Branching is easier</li>
+              <li>Distributed development</li>
+            </ul>
+            <br>
+            <h2>Git Workflow</h2>
+            <br>
+            <p>The Git workflow is divided into three states:</p>
+            <br>
+            <ul>
+              <li>Working directory - Modify files in your working directory</li>
+              <li>Staging area (Index) - Stage the files and add snapshots of them to your staging area</li>
+              <li>Git directory (Repository) - Perform a commit that stores the snapshots permanently to your Git directory. Checkout any existing version, make changes, stage them and commit</li>
+            </ul>
+            <br>
+            <h2>Branch in Git</h2>
+            <br>
+            <p>Branch in Git is used to keep your changes until they are ready. You can do your work on a branch while the main branch (master) remains stable. After you are done with your work, you can merge it with the main office</p>
+          </section>
+
+          <div id="git-section-configurations-title">
+            <section class="card-box" id="git-section-configurations">
+              <h2>Configurations</h2>
+              <br>
+              <p>Global configurations, such as name/email</p>
+            </section>
+            <section class="card" id="git-section-configurations"> 
+              <button class="collapsible">Open Collapsible</button>
+              <div class="content">                
+                <table> 
+                  <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                  </tr>           
+                  <tr>
+                    <td>git config --global user.name “Your Name”</td>
+                    <td>Set the name that will be attached to your commits and tags</td>
+                  </tr>
+                  <tr>
+                    <td>git config --global user.email “you@example.com”</td>
+                    <td>Set the e-mail address that will be attached to your commits and tags</td>
+                  </tr>
+                  <tr>
+                    <td>git config --global color.ui auto</td>
+                    <td>Enable some colorization of Git output</td>
+                  </tr>
+                </table>
+              </div>
+            </section>
+          </div>
+          <div id="git-section-start-project">
+            <section class="card-box" id="git-section-start-project">
+              <h2>Start Project</h2>
+              <br>
+              <p>Create a new local repository. If [project name] is provided, Git will create a new directory name [project name] and will initialize a repository inside it. If [project name] is not provided, then a new repository is initialized in the current directory</p>
+              <br>
+              <p>Or clone. Downloads a project with the entire history from the remote repository</p>
+            </section>
+            <section class="card" id="git-section-start-project"> 
+              <button class="collapsible">Open Collapsible</button>
+              <div class="content">          
+                <table>
+                  <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                  </tr>
+                  <tr>
+                    <td>git init [project name]</td>
+                    <td>
+                      Create a new local repository. If <b>[project name]</b> is provided, Git will
+                      create a new directory name <b>[project name]</b> and will initialize a
+                      repository inside it. If <b>[project name]</b> is not provided, then a new
+                      repository is initialized in the current directory
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>git clone [project url]</td>
+                    <td>Downloads a project with the entire history from the remote repository</td>
+                  </tr>
+                </table>
+              </div>
+            </section>
+          </div>     
+          <div id="git-section-day-to-day">
+            <section class="card-box" id="git-section-day-to-day">
+              <h2>Day to Day</h2>
+              <br>
+              <p>Usefull commands that you may need in Git</p>
+            </section>
+            <section class="card" id="git-section-day-to-day">
+              <button class="collapsible">Open Collapsible</button>
+              <div class="content">
+                <table>
+                  <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                  </tr>
+                  <tr>
+                    <td>git status</td>
+                    <td>Displays the status of your working directory. Options include new,
+                      staged, and modified files. It will retrieve branch name, current commit
+                      identifier, and changes pending commit</td>
+                  </tr>
+                  <tr>
+                    <td>git add [file]</td>
+                    <td>Add a file to the <b>staging</b> area. Use in place of the full file path to add all
+                      changed files from the <b>current directory</b> down into the <b>directory tree</b>&gt;</td>
+                  </tr>
+                  <tr>
+                    <td>git diff [file]</td>
+                    <td>Show changes between <b>working directory</b> and <b>staging area</b></td>
+                  </tr>
+                  <tr>
+                    <td>git diff --staged [file]</td>
+                    <td>Shows any changes between the <b>staging area</b> and the <b>repository</b></td>
+                  </tr>
+                  <tr>
+                    <td>git checkout -- [file]</td>
+                    <td>Discard changes in <b>working directory</b>&gt;. This operation is <b>unrecoverable</b></td>
+                  </tr>
+                  <tr>
+                    <td>git reset [file]</td>
+                    <td>Revert your <b>repository</b> to a previous known working state</td>
+                  </tr>
+                  <tr>
+                    <td>git commit</td>
+                    <td>Create a new <b>commit</b> from changes added to the <b>staging area</b>
+                      The <b>commit</b> must have a message</td>
+                  </tr>
+                  <tr>
+                    <td>git rm [file]</td>
+                    <td>Remove file from <b>working directory</b> and <b>staging area</td>
+                  </tr>
+                  <tr>
+                    <td>git stash</td>
+                    <td>Put current changes in your <b>working directory</b> into <b>stash</b> for later use</td>
+                  </tr>
+                  <tr>
+                    <td>git stash pop</td>
+                    <td>Apply stored <b>stash</b> content into <b>working directory</b>, and clear <b>stash</b></td>
+                  </tr>
+                  <tr>
+                    <td>git stash drop</td>
+                    <td>Delete a specific <b>stash</b> from all your previous <b>stashes</b></td>
+                  </tr>
+                </table>
+              </div>
+            </section>
+          </div>
+          <div id="git-section-branching-model">
+            <section class="card-box" id="git-section-branching-model">
+              <h2>Branch Models</h2>
+              <br>
+              <p>In Git, a branch is a new/separate version of the main repository</p>
+            </section>
+            <section class="card" id="git-section-branching-model">
+              <button class="collapsible">Open Collapsible</button>
+              <div class="content">
+                <table>
+                  <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                  </tr>
+                  <tr>
+                    <td>git branch [-a]</td>
+                    <td>List all local branches in repository. With <b>-a</b> show all branches(with remote).</td>
+                  </tr>
+                  <tr>
+                    <td>git branch [branch_name]</td>
+                    <td>Create new branch, referencing the current <b>HEAD</b></td>
+                  </tr>
+                  <tr>
+                    <td>git checkout [-b][branch_name]</td>
+                    <td>Switch <b>working directory</b> to the specified branch. With <b>-b:</b> Git will
+                      create the specified branch if it does not exist</td>
+                  </tr>
+                  <tr>
+                    <td>git merge [from name]</td>
+                    <td>Join specified <b>[from name]</b> branch into your current branch (the one
+                      you are on currently)</td>
+                  </tr>
+                  <tr>
+                    <td>git branch -d [name]</td>
+                    <td>Remove selected branch, if it is already merged into any other.
+                      <b>-D</b> instead of <b>-d</b> forces deletion</td>
+                  </tr>
+                </table>
+              </div>
+            </section>
+          </div>
+          <div id="git-section-review-work">
+            <section class="card-box" id="git-section-review-work">
+              <h2>Review Work</h2>
+              <br>
+              <p>You can log data to be viewed for testing and debugging</p>
+            </section>
+            <section class="card" id="git-section-review-work">
+              <button class="collapsible">Open Collapsible</button>
+              <div class="content">
+                <table>
+                  <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                  </tr>
+                  <tr>
+                    <td>git log [-n count]</td>
+                    <td>List commit history of current branch. <b>-n</b> count limits list to last <b>n</b> commits</td>
+                  </tr>
+                  <tr>
+                    <td>git log --oneline --graph --decorate</td>
+                    <td>An overview with reference labels and history graph. One commit
+                      per line</td>
+                  </tr>
+                  <tr>
+                    <td>git log ref..</td>
+                    <td>List commits that are present on the current branch and not merged
+                      into <b>ref</b>. A <b>ref</b> can be a branch name or a tag name</td>
+                  </tr>
+                  <tr>
+                    <td>git log ..ref</td>
+                    <td>List commit that are present on <b>ref</b> and not merged into current
+                      branch</td>
+                  </tr>
+                  <tr>
+                    <td>git reflog</td>
+                    <td>List operations (e.g. checkouts or commits) made on local repository</td>
+                  </tr>
+                </table>
+              </div>
+            </section>
+          </div>
+          <div id="git-section-tagging-know-commits">
+            <section class="card-box" id="git-section-tagging-know-commits">
+              <h2>Tagging Known Commits</h2>
+              <br>
+              <p>Git has the ability to tag specific points in a repository’s history as being important. Typically, people use this functionality to mark release points (v1.0, v2.0 and so on)</p>
+            </section>
+            <section class="card" id="git-section-tagging-know-commits">
+              <button class="collapsible">Open Collapsible</button>
+              <div class="content">
+                <table>
+                  <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                  </tr>
+                  <tr>
+                    <td>git tag</td>
+                    <td>List all tags</td>
+                  </tr>
+                  <tr>
+                    <td>git tag [name] [commit sha]</td>
+                    <td>Create a tag reference named <b>name</b> for current commit. Add <b>commit
+                      sha</b> to tag a specific commit instead of current one</td>
+                  </tr>
+                  <tr>
+                    <td> git tag -a [name] [commit sha]</td>
+                    <td>Create a tag object named <b>name</b> for current commit</td>
+                  </tr>
+                  <tr>
+                    <td>git tag -d [name]</td>
+                    <td>Remove a tag from local repository</td>
+                  </tr>
+                </table>
+              </div>
+            </section>
+          </div>
+          <div id="git-section-reverting-changes">
+            <section class="card-box" id="git-section-reverting-changes">
+              <h2>Reverting Changes</h2>
+              <br>
+              <p>Revert is the command we use when we want to take a previous commit and add it as a new commit, keeping the log intact</p>
+            </section>
+            <section class="card" id="git-section-reverting-changes">
+              <button class="collapsible">Open Collapsible</button>
+              <div class="content">
+                <table>
+                  <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                  </tr>
+                  <tr>
+                    <td>git reset [--hard] [target reference]</td>
+                    <td>Switches the current branch to the <b>target reference</b>, leaving
+                      a difference as an uncommitted change. When <b>--hard</b> is used,
+                      all changes are discarded</td>
+                  </tr>
+                  <tr>
+                    <td>git revert [commit sha]</td>
+                    <td>Create a new commit, reverting changes from the specified commit.
+                      It generates an <b>inversion</b> of changes</td>
+                  </tr>
+                </table>
+              </div>
+            </section>
+          </div>
+          <div id="git-section-synchronizing-repositories">
+            <section class="card-box" id="git-section-synchronizing-repositories">
+              <h2>Synchronizing Repositories</h2>
+              <br>
+              <p>You can keep your local repository in sync with your remote repository as you make changes to either one. In Git, a remote is the server where your code is stored. In your case, that server is a repository on GitHub</p>
+            </section>
+            <section class="card" id="git-section-synchronizing-repositories">
+              <button class="collapsible">Open Collapsible</button>
+              <div class="content">
+                <table>
+                  <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                  </tr>
+                  <tr>
+                    <td>git fetch [remote]</td>
+                    <td>Fetch changes from the <b>remote</b>, but not update tracking branches</td>
+                  </tr>
+                  <tr>
+                    <td>git fetch --prune [remote]</td>
+                    <td>Delete remote Refs that were removed from the remote repository</td>
+                  </tr>
+                  <tr>
+                    <td>git pull [remote]</td>
+                    <td>Fetch changes from the <b>remote</b> and merge current branch with its
+                      upstream</td>
+                  </tr>
+                  <tr>
+                    <td>git push [--tags] [remote]</td>
+                    <td>Push local changes to the <b>remote</b>. Use <b>--tags</b> to push tags</td>
+                  </tr>
+                  <tr>
+                    <td>git push -u [remote] [branch]</td>
+                    <td>Push local branch to <b>remote</b> repository. Set its copy as an upstream</td>
+                  </tr>
+                </table>
+              </div>
+            </section>
+          </div>
+          <div id="git-section-notes"> 
+            <section class="card-box" id="git-section-notes">
+              <ul>
+                <h3>Enter your Git notes here...</h3>
+                <br>
+                <li>Navigate to the root folder</i>
+                  <section class="card-code" id="git-section-notes-code-snipp-root">
+                    <p>
+                      <span class="token-comment">bub2k@JM_HP_Laptop</span>
+                      <span class="token-conditional">MINGW64</span>
+                      <span class="token-punctuation">~</span><br>
+                      <span class="token-operator">$ cd bootcamp</span><br>
+                    </p>
+                  </section>
+                <li>Navigate to the project folder</li>
+                <section class="card-code" id="git-section-notes-code-snipp-project">
+                  <p>
+                    <span class="token-comment">bub2k@JM_HP_Laptop</span>
+                    <span class="token-conditional">MINGW64</span>
+                    <span class="token-punctuation">~/bootcamp</span><br>
+                    <span class="token-operator">$ cd prework-study-guide</span><br>
+                  </p>
+                </section>
+                <li>Stages all changes</li>
+                <section class="card-code" id="git-section-notes-code-snipp">
+                  <p>
+                    <span class="token-comment">bub2k@JM_HP_Laptop</span>
+                    <span class="token-conditional">MINGW64</span>
+                    <span class="token-punctuation">~/bootcamp/prework-study-guide</span>
+                    <span class="token-keyword">(feature/add-js)</span><br>
+                    <span class="token-operator">$ git add -A</span>
+                  </p>
+                </section>
+                <li>Commit changes to local branch as a save point</li>
+                <section class="card-code" id="git-section-notes-code-snipp">
+                  <p>
+                    <span class="token-comment">bub2k@JM_HP_Laptop</span>
+                    <span class="token-conditional">MINGW64</span>
+                    <span class="token-punctuation">~/bootcamp/prework-study-guide</span>
+                    <span class="token-keyword">(feature/add-js)</span><br>
+                    <span class="token-operator">$ git commit -m "added JS to project"</span>
+                  </p>
+                </section>
+                <li>Downloads new changes from the branch named master on the remote named origin and integrates them into your local HEAD branch</li>
+                <section class="card-code" id="git-section-notes-code-snipp">
+                  <p>
+                    <span class="token-comment">bub2k@JM_HP_Laptop</span>
+                    <span class="token-conditional">MINGW64</span>
+                    <span class="token-punctuation">~/bootcamp/prework-study-guide</span>
+                    <span class="token-keyword">(feature/add-js)</span><br>
+                    <span class="token-operator">$ git pull origin main</span>
+                  </p>
+                </section>
+                <li>Pushes changes to the original branch(MAIN) from the featured branch</li>
+                <section class="card-code" id="git-section-notes-code-snipp">
+                  <p>
+                    <span class="token-comment">bub2k@JM_HP_Laptop</span>
+                    <span class="token-conditional">MINGW64</span>
+                    <span class="token-punctuation">~/bootcamp/prework-study-guide</span>
+                    <span class="token-keyword">(feature/add-js)</span><br>
+                    <span class="token-operator">$ git push origin feature/add-js</span>
+                  </p>
+                </section>
+                <li>Updates the local branch from the (MAIN) or head</li>
+                <section class="card-code" id="git-section-notes-code-snipp">
+                  <p>
+                    <span class="token-comment">bub2k@JM_HP_Laptop</span>
+                    <span class="token-conditional">MINGW64</span>
+                    <span class="token-punctuation">~/bootcamp/prework-study-guide</span>
+                    <span class="token-keyword">(feature/add-js)</span><br>
+                    <span class="token-operator">$ git pull origin main</span>
+                  </p>
+                </section>
+                <li>Create new branch and switch to it</li>
+                <section class="card-code" id="git-section-notes-code-snipp">
+                  <p>
+                    <span class="token-comment">bub2k@JM_HP_Laptop</span>
+                    <span class="token-conditional">MINGW64</span>
+                    <span class="token-punctuation">~/bootcamp/prework-study-guide</span>
+                    <span class="token-keyword">(feature/add-js)</span><br>
+                    <span class="token-operator">$ git checkout -b feature/project-README</span>
+                  </p>
+                </section>
+                <li>Checks what branch we are currently on</li>
+                <section class="card-code" id="git-section-notes-code-snipp">
+                  <p>
+                    <span class="token-comment">bub2k@JM_HP_Laptop</span>
+                    <span class="token-conditional">MINGW64</span>
+                    <span class="token-punctuation">~/bootcamp/prework-study-guide</span>
+                    <span class="token-keyword">(feature/add-js)</span><br>
+                    <span class="token-operator">$ git status</span>
+                  </p>
+                </section>
+              </ul>
+            </section>
+          </div>
+          <div id="git-section-foot">
+            <section class="card-box" id="git-section-foot">
+              <a href="https://about.gitlab.com/images/press/git-cheat-sheet.pdf">Learn More about Git here!</a>
+            </section>
+          </div>
+        </div>
+      </div>                
+    </main>
+    <footer>
+      <h2>I can code!</h2>
+    </footer>
+
+    <script src="../assets/script.js"></script>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+      </script>
+
+  </body> 
+</html>

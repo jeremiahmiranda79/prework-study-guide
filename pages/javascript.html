@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>Prework Study Guide</title>
+
+
+    <style>
+      .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+      
+      .active, .collapsible:hover {
+        background-color: #555;
+      }
+      
+      .collapsible:after {
+        content: '\002B';
+        color: white;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+      
+      .active:after {
+        content: "\2212";
+      }
+      
+      .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+      }
+      </style>
+  </head>
+  
+  <body>
+    <header id="header-top">
+      <h1>Prework Study Guide</h1>
+      <img src="../assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie."/>
+      <h2>✨ Open the Console to See What's Happening ✨</h2>
+      <br>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/bash.html">Bash</a></li>
+          <li><a href="../pages/html.html">HTML</a></li>
+          <li><a href="../pages/css.html">CSS</a></li>
+          <li><a href="../pages/git.html">Git</a></li>
+          <li><a href="../pages/javascript.html">JavaScript</a></li>
+        </ul>
+      </nav>
+      <br>
+    </header>
+    <main>            
+      <div id="javascript-section">
+        <div class="card" id="javascript-section-head">
+          <br>
+          <h1>JavaScript</h1>
+          <section class="card-box" id="javascript-section-introduction">
+            <p>JavaScript is the most powerful tool for front-end development. 
+              Nonetheless, with continuous updates and frameworks (and NodeJS ) 
+              added to the roster, JS can also be used for the backend.<br>
+            </p>
+            <br>
+            <p>This JavaScript cheat sheet tries to cover all the basics of JS. 
+              We have also provided the code snippets pertaining to different JS
+              concepts, which you can use if you get confused with the syntax. 
+              Moreover, this JavaScript cheat sheet aims to serve as the perfect
+              reference for your JS learning.
+            </p>
+          </section> 
+          <div id="javascript-section-including">
+            <section class="card-box" id="javascript-section-internal-including">
+              <h2>Include JavaScript in an HTML file</h2>
+              <br>
+              <p>There are 2 ways of doing so:</p>
+              <br>
+              <h3>1. Internal Including of Java Script</h3>
+              <br>
+              <p>In this, we write the JavaScript code in the HTML pages itself inside the &lt;script&gt; tag.</p>
+              <br>
+              <h4>Example:</h4>
+            </section>
+            <section class="card-code" id="javascript-section-internal-including-code">
+              <p>
+                <span class="token-language">&lt;</span>
+                <span class="token-class-name-user">script type</span>
+                <span class="token-operator">=</span>
+                <span class="token-string">"text/javascript"</span>
+                <span class="token-language">&gt;</span><br>
+                <span class="token-comment">&nbsp;&nbsp;/* Code here */</span><br>
+                <span class="token-language">&lt;/</span>
+                <span class="token-class-name-user">script</span>
+                <span class="token-language">&gt;</span>
+              </p>
+            </section>
+            <section class="card-box" id="javascript-section-external-including">
+              <h3>2. External Including of Java Script</h3>
+              <br>
+              <p>In this method, we create a JavaScript document with an extension of .js 
+                and include it in the HTML page.</p>
+              <br>
+              <h4>Example:</h4>
+            </section>
+            <section class="card-code" id="javascript-section-external-including-code">
+              <p>
+                <span class="token-language">&lt;</span>
+                <span class="token-class-name-user">script src</span>
+                <span class="token-language">&gt;</span>
+                <span class="token-string">"myscript.js"</span><br>
+                <span class="token-comment">&nbsp;&nbsp;/* Code here */</span><br>
+                <span class="token-language">&lt;/</span>
+                <span class="token-class-name-user">script</span>
+                <span class="token-language">&gt;</span>
+              </p>
+            </section>
+          </div>
+          <div id="javascript-section-comments">
+            <section class="card-box" id="javascript-section-comments">
+            <h2>Comments in JavaScript</h2>
+            <br>
+            <p>Comments are used to provide additional information about the code. 
+              In JS we use // to add a single line as a comment and /* to add multiple lines as a comment.</p>
+            <br>
+            <h4>Example:</h4>
+            </section>
+          <section class="card-code" id="javascript-section-comments-code">
+            <p>
+              <span class="token-class-name-user">Single line comment</span>
+              <span class="token-punctuation">-</span>
+              <span class="token-comment">// Single line comment</span><br>
+              <span class="token-class-name-user">Multi line comment</span>
+              <span class="token-punctuation">-</span>
+              <span class="token-comment">/* Multi line comment</span><br>
+            </p>
+          </section>
+          </div>
+          <div id="javascript-section-variables-and-data-types">
+            <section class="card-box" id="javascript-section-variables">
+              <h2>JavaScript Variable</h2>
+              <br>
+              <p>In JS, we have 3 keywords that we can use to declare a variable:</p>
+            </section>
+            <section class="card" id="javascript-section-variable-type">
+              <button class="collapsible">Open Collapsible</button>
+              <div class="content">
+                <table>
+                  <tr>
+                    <th>Variable</th>
+                    <th>Description</th>
+                    <th>Code Snippet</th>
+                  </tr>
+                  <tr>
+                    <td>var</td>
+                    <td><b>var</b> keyword is used to assign a variable. As JavaScript is a dynamic language so we do not need to specify the specific data type</td>
+                    <td>var num_1 = 10;</td>
+                  </tr>
+                  <tr>
+                    <td>const</td>
+                    <td><b>const</b> keyword is used to assign a variable. Once we assign a variable with <b>const</b> we cannot modify its value</td>
+                    <td>const num_2 = 20;</td>
+                  </tr>
+                  <tr>
+                    <td>let</td>
+                    <td>It is similar to const, but a let variable can be reassigned though it can't be re-declared</td>
+                    <td>let num_2 = 30;</td>
+                  </tr>
+                </table>
+              </div>
+            </section>
+            <section class="card-box" id="javascript-section-data-type">
+              <h2>JavaScript Data Type</h2>
+            </section>
+            <section class="card" id="javascript-section-data-type">
+              <button class="collapsible">Open Collapsible</button>
+              <div class="content">
+                <table>
+                  <tr>
+                    <th>Data Type</th>
+                    <th>Code Snippet</th>
+                  </tr>
+                  <tr>
+                    <td>Number</td>
+                    <td>var x = 100;</td>
+                  </tr>
+                  <tr>
+                    <td>String</td>
+                    <td>var x = "100";</td>
+                  </tr>
+                  <tr>
+                    <td>Boolean</td>
+                    <td>var x =true;</td>
+                  </tr>
+                  <tr>
+                    <td>null</td>
+                    <td>var x = null;</td>
+                  </tr>
+                  <tr>
+                    <td>Object</td>
+                    <td>var x = {name:"Sam", age:"29"}</td>
+                  </tr>
+                </table>
+              </div>
+            </section>
+          </div>        
+          <section class="card-box" id="javascript-section-array-method">
+            <h2>Array in JavaScript</h2>
+          </section>
+          <section class="card-code" id="javascript-section-array-method">
+            <p>
+              <span class="token-keyword">var</span>
+              <span class="token-parameter">arr</span>
+              <span class="token-operator">=</span>
+              <span class="token-operator">[</span>
+              <span class="token-numeral">1</span>
+              <span class="token-operator">,</span>
+              <span class="token-numeral">2</span>
+              <span class="token-operator">,</span>
+              <span class="token-numeral">3</span>
+              <span class="token-operator">,</span>
+              <span class="token-numeral">4</span>
+              <span class="token-operator">,</span>
+              <span class="token-numeral">5</span>
+              <span class="token-operator">,</span>
+              <span class="token-numeral">6</span>
+              <span class="token-operator">];</span>
+            </p>
+          </section>
+          <section class="card-box" id="javascript-section-array-methods">
+            <h2>Array Methods</h2>
+          </section>
+          <section class="card" id="javascript-section-array-methods">
+            <button class="collapsible">Open Collapsible</button>
+            <div class="content">
+              <table>
+                <tr>
+                  <th>Method</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>concat()</td>
+                  <td>Merges arrays to make a single array</td>
+                </tr>
+                <tr>
+                  <td>indexOf()</td>
+                  <td>To get the index of a value</td>
+                </tr>
+                <tr>
+                  <td>join()</td>
+                  <td>Combines all the elements of an array to make it a string</td>
+                </tr>
+                <tr>
+                  <td>lastIndexOf()</td>
+                  <td>Gives the last position of the array</td>
+                </tr>
+                <tr>
+                  <td>pop()</td>
+                  <td>Removes the last element of the array</td>
+                </tr>
+                <tr>
+                  <td>push()</td>
+                  <td>Adds a new element at the end of an array</td>
+                </tr>
+                <tr>
+                  <td>reverse()</td>
+                  <td>Reverses the array elements</td>
+                </tr>
+                <tr>
+                  <td>shift()</td>
+                  <td>Removes the first element of the array</td>
+                </tr>
+                <tr>
+                  <td>slice()</td>
+                  <td>Creates a new sequence of an array from the existing one</td>
+                </tr>
+                <tr>
+                  <td>sort()</td>
+                  <td>Sorts the elements of the array</td>
+                </tr>
+                <tr>
+                  <td>splice()</td>
+                  <td>Adds an element in a specific way and position</td>
+                </tr>
+                <tr>
+                  <td>toString()</td>
+                  <td>Converts elements to a string</td>
+                </tr>
+                <tr>
+                  <td>unshift()</td>
+                  <td>Adds an element at the beginning of an array</td>
+                </tr>
+                <tr>
+                  <td>valueOf()</td>
+                  <td>Return the position of the element</td>
+                </tr>
+              </table>
+            </div>
+          </section>
+          <section class="card-box" id="javascript-section-operator">
+            <h2>Operators in JavaScript</h2>
+            <br>
+            <p>In JS we have many types of operators, namely arithmetic, conditional, logical, and bitwise operators. We use operators to perform a specific task, and the operators always need operands to work</p>
+          </section>
+          <section class="card" id="javascript-section-operators-boolean">
+            <button class="collapsible">Open Collapsible</button>
+            <div class="content">
+              <table>
+                <tr>
+                  <th>Operators</th>
+                  <th>Operator Name</th>
+                  <th>Code Snippet</th>
+                </tr>
+                <tr>
+                  <td>+</td>
+                  <td>Addition</td>
+                  <td>1 + 2 // 3</td>
+                </tr>
+                <tr>
+                  <td>-</td>
+                  <td>Subtraction</td>
+                  <td>2 - 1 // 1</td>
+                </tr>
+                <tr>
+                  <td>*</td>
+                  <td>Multiplication</td>
+                  <td>2 * 2 // 4</td>
+                </tr>
+                <tr>
+                  <td>/</td>
+                  <td>Division</td>
+                  <td>4 / 2 // 2</td>
+                </tr>
+                <tr>
+                  <td>%</td>
+                  <td>Modules or remainder</td>
+                  <td>10 % 2 // 0</td>
+                </tr>
+                <tr>
+                  <td>++</td>
+                  <td>Increment</td>
+                  <td>x = 2; x++; //3</td>
+                </tr>
+                <tr>
+                  <td>--</td>
+                  <td>Decrement</td>
+                  <td>x = 2; x--; // 1</td>
+                </tr>
+              </table>  
+            </div>    
+          </section>
+          <section class="card-box" id="javascript-section-operators-boolean-comparison">
+            <h3>Comparison: It returns a true or false value</h3>
+          </section>
+          <section class="card" id="javascript-section-operators-logical">
+            <button class="collapsible">Open Collapsible</button>
+            <div class="content">
+              <table>
+                <tr>
+                  <th>Operators</th>
+                  <th>Operator Name</th>
+                </tr>
+                <tr>
+                  <td>==</td>
+                  <td>Equal to</td>
+                </tr>
+                <tr>
+                  <td>===</td>
+                  <td>Equal value and data type</td>
+                </tr>
+                <tr>
+                  <td>!=</td>
+                  <td>Not equal</td>
+                </tr>
+                <tr>
+                  <td>!==</td>
+                  <td>Not equal value and data type</td>
+                </tr>
+                <tr>
+                  <td>&gt;</td>
+                  <td>Greater than</td>
+                </tr>
+                <tr>
+                  <td>&lt;</td>
+                  <td>Less than</td>
+                </tr>
+                <tr>
+                  <td>&gt;=</td>
+                  <td>Greater than and equal to</td>
+                </tr>
+                <tr>
+                  <td>&lt;=</td>
+                  <td>Less than and equal to</td>
+                </tr>
+                <tr>
+                  <td>?</td>
+                  <td>Ternary Operator</td>
+                </tr>
+              </table> 
+            </div>
+          </section>
+          <section class="card-box" id="javascript-section-operators-logical">
+            <h3>Logical Operator: It operates on a Boolean value</h3>
+          </section>
+          <section class="card" id="javascript-section-operators-logical">
+            <button class="collapsible">Open Collapsible</button>
+            <div class="content">
+              <table>
+                <tr>
+                  <th>Operators</th>
+                  <th>Operator Name</th>
+                </tr>
+                <tr>
+                  <td>&&</td>
+                  <td>And</td>
+                </tr>
+                <tr>
+                  <td>||</td>
+                  <td>Or</td>
+                </tr>
+                <tr>
+                  <td>!</td>
+                  <td>Not</td>
+                </tr>
+              </table>
+            </div>
+          </section>
+          <section class="card-box" id="javascript-section-operators-bitwise">
+            <h3>Bitwise Operator:</h3>
+          </section>
+          <section class="card" id="javascript-section-operators-bitwise">
+            <button class="collapsible">Open Collapsible</button>
+            <div class="content">
+              <table>
+                <tr>
+                  <th>Operators</th>
+                  <th>Operator Name</th>
+                </tr>
+                <tr>
+                  <td>&</td>
+                  <td>AND statement</td>
+                </tr>
+                <tr>
+                  <td>|</td>
+                  <td>OR statement</td>
+                </tr>
+                <tr>
+                  <td>~</td>
+                  <td>Not</td>
+                </tr>
+                <tr>
+                  <td>^</td>
+                  <td>XOR</td>
+                </tr>
+                <tr>
+                  <td>&lt;&lt;</td>
+                  <td>Left shift</td>
+                </tr>
+                <tr>
+                  <td>&gt;&gt;</td>
+                  <td>Right Shift</td>
+                </tr>
+                <tr>
+                  <td>&gt;&gt;&gt;</td>
+                  <td>Zero fill right shift</td>
+                </tr>
+              </table>
+            </div>
+          </section>
+          <section class="card-box" id="javascript-section-function">
+            <h2>Function</h2>
+            <br>
+            <p>Functions are used to perform a specific task</p>
+            <br>
+            <h3>User-defined functions in JavaScript:</h3>
+          </section>
+          <section class="card-code" id="javascript-section-function-code">
+            <p>
+              <span class="token-keyword">function</span>
+              <span class="token-parameter">function_name</span>
+              <span class="token-punctuation">(</span>
+              <span class="token-parameter">parameters</span>
+              <span class="token-punctuation">){</span>
+              <br>  
+              <span class="token-comment">&nbsp;&nbsp;&nbsp;//function task</span>
+              <br>
+              <span class="token-punctuation">}</span>
+            </p>
+          </section> 
+          <section class="card-box" id="javascript-section-function-output">
+            <h3>Show Output on the screen</h3>
+            <br>
+            <p>In JS, we have some inbuilt functions to display output i.e. print something on the screen</p>
+          </section>
+          <section class="card" id="javascript-section-function-output">
+            <button class="collapsible">Open Collapsible</button>
+            <div class="content">
+              <button class="collapsible">Open Collapsible</button>
+              <div class="content">
+                <table>
+                  <tr>
+                    <th>Output Function</th>
+                    <th>Description</th>
+                    <th>Code Snippet</th>
+                  </tr>
+                  <tr>
+                    <td>alert()</td>
+                    <td>An alert box shows a box</td>
+                    <td>alert("Hello world")</td>
+                  </tr>
+                  <tr>
+                    <td>confirm()</td>
+                    <td>It is similar to alert but it returns value in the form of true or false</td>
+                    <td>confirm("Are you 18+")</td>
+                  </tr>
+                  <tr>
+                    <td>console.log()</td>
+                    <td>It is used to write information on the browser console</td>
+                    <td>console.log("Hello world")</td>
+                  </tr>
+                  <tr>
+                    <td>document.write()</td>
+                    <td>It can write in the HTML document</td>
+                    <td>	document.write("Hello world")</td>
+                  </tr>
+                  <tr>
+                    <td>prompt()</td>
+                    <td>It is used to take data from the user</td>
+                    <td>prompt("Enter Your name")</td>
+                  </tr>
+                </table>
+              </div>
+          </section>
+          <section class="card-box" id="javascript-section-function-global">
+            <h2>Global Function</h2>
+          </section>
+          <section class="card" id="javascript-section-function-global">
+            <button class="collapsible">Open Collapsible</button>
+            <div class="content">
+              <table>
+                <tr>
+                  <th>Global Functions</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>decodeURI()</td>
+                  <td>Decodes a Uniform Resource Identifier (URI)</td>
+                </tr>
+                <tr>
+                  <td>decodeURIComponent()</td>
+                  <td>Decodes a URI component</td>
+                </tr>
+                <tr>
+                  <td>endodeURI()</td>
+                  <td>Encodes a URI into UTF-8</td>
+                </tr>
+                <tr>
+                  <td>encodeURIComponent()</td>
+                  <td>Encodes URI components</td>
+                </tr>
+                <tr>
+                  <td>eval()</td>
+                  <td>Evaluates the code present in the string format</td>
+                </tr>
+                <tr>
+                  <td>isFinite()</td>
+                  <td>Checks whether the value is finite or not</td>
+                </tr>
+                <tr>
+                  <td>isNaN()</td>
+                  <td>Evaluates whether the value is NaN or not</td>
+                </tr>
+                <tr>
+                  <td>Number()</td>
+                  <td>Converts the string into a number</td>
+                </tr>
+                <tr>
+                  <td>parseFloat()</td>
+                  <td>Parses the value and returns a floating-point number</td>
+                </tr>
+                <tr>
+                  <td>parseInt()</td>
+                  <td>Parses the value and returns an integer</td>
+                </tr>
+              </table>
+            </div>
+          </section>
+          <section class="card-box" id="javascript-section-loop">
+            <h2>Loops in JavaScript</h2>
+            <br>
+            <p>Loop is used to iterate over a block of statements again and again until a certain condition is fulfilled</p>
+            <br>
+            <h3>In JS, we have 3 types of statements that can loop over a statement:</h3>
+          </section>
+          <section class="card" id="javascript-section-loop">
+            <button class="collapsible">Open Collapsible</button>
+            <div class="content">
+              <table>
+                <tr>
+                  <th>Loop</th>
+                  <th>Description</th>
+                  <th>Code Snippet</th>
+                </tr>
+                <tr>
+                  <td>for</td>
+                  <td>We use for loop when we are certain about how many times we are going to iterate over a block of code</td>
+                  <td>for( var i=0; i&lt;10; i++) { console.log(i); }</td>
+                </tr>
+                <tr>
+                  <td>while</td>
+                  <td>When we are not certain about the number of iterations, we use the while loop</td>
+                  <td>while(i&lt;10) { console.log(i); i++; }</td>
+                </tr>
+                <tr>
+                  <td>do while</td>
+                  <td>Even if the condition is false, the do while loop will execute at least 1 time</td>
+                  <td>do { console.log(i) i++; } while(i&lt;10)</td>
+                </tr>
+              </table>
+            </div>
+          </section>
+          <section class="card-box" id="javascript-section-loop">
+            <h3>break: It is a keyword we use in a loop to stop and exit the cycle of the loop</h3>
+            <br>
+            <h3>continue: Continue is used to skip a cycle of the loop</h3>
+            <br>
+            <h3>JavaScript If...Else:</h3>
+          </section>  
+          <section class="card-code" id="javascript-section-loop-if-else">
+            <p>
+              <span class="token-conditional">if</span>
+              <span class="token-punctuation">(</span>
+              <span class="token-parameter">condition</span>
+              <span class="token-operator">===</span>
+              <span class="token-keyword">true</span>
+              <span class="token-punctuation">){</span><br>
+              <span class="token-comment">&nbsp;&nbsp;&nbsp;//code executed if the statement is true</span><br>
+              <span class="token-punctuation">}</span><br>
+              <span class="token-conditional">else</span>
+              <span class="token-punctuation">{</span><br>
+              <span class="token-comment">&nbsp;&nbsp;&nbsp;//code executed if the statement is false</span><br>
+              <span class="token-punctuation">}</span>
+            </p>
+          </section>
+          <section class="card-box" id="javascript-section-twist">
+            <h2>Twists</h2>
+            <br>
+            <p>A string is a collection of characters inside the double or single inverted commas</p>
+          </section>
+          <section class="card-code" id="javascript-section-twist">
+            <p>
+              <span class="token-keyword">var</span>
+              <span class="token-parameter">string</span>
+              <span class="token-operator">=</span>
+              <span class="token-string">"This is a string"</span><br>
+              <span class="token-parameter">Escape Characters</span>
+              <span class="token-operator">=</span>
+              <span class="token-parameter">\</span>
+            </p>
+          </section>
+          <section class="card-box" id="javascript-section-string-methods">
+            <h3>String Methods</h3>
+          </section>
+          <section class="card" id="javascript-section-string-methods">
+            <button class="collapsible">Open Collapsible</button>
+            <div class="content">
+              <table>
+                <tr>
+                  <th>Methods</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>charAt()</td>
+                  <td>Returns the position of the character inside a string</td>
+                </tr>
+                <tr>
+                  <td>charCodeAt()</td>
+                  <td>Provides the Unicode of the character</td>
+                </tr>
+                <tr>
+                  <td>concat()</td>
+                  <td>Joins two or more strings into one</td>
+                </tr>
+                <tr>
+                  <td>fromCharCode()</td>
+                  <td>Returns a string created from the specified sequence of UTF-16 code units</td>
+                </tr>
+                <tr>
+                  <td>indexOf()</td>
+                  <td>Returns the position of the character</td>
+                </tr>
+                <tr>
+                  <td>lastIndexOf()</td>
+                  <td>Provides the last index of the character if there is more than one same character in the string</td>
+                </tr>
+                <tr>
+                  <td>match()</td>
+                  <td>Retrieves the matches of a string against a search pattern</td>
+                </tr>
+                <tr>
+                  <td>replace()</td>
+                  <td>Replaces a text with another</td>
+                </tr>
+                <tr>
+                  <td>search()</td>
+                  <td>Returns the position of a text in a string</td>
+                </tr>
+                <tr>
+                  <td>slice()</td>
+                  <td>Extracts a sequence of string</td>
+                </tr>
+                <tr>
+                  <td>split()</td>
+                  <td>Splits the string into an array</td>
+                </tr>
+                <tr>
+                  <td>substr()</td>
+                  <td>Extracts a sequence of string depending on a specified number of characters</td>
+                </tr>
+                <tr>
+                  <td>substring()</td>
+                  <td>Similar to <b>slice()</b> but does not work with -ve indices</td>
+                </tr>
+                <tr>
+                  <td>toLoweCase()</td>
+                  <td>Converts the string to lowercase</td>
+                </tr>
+                <tr>
+                  <td>toUpperCase()</td>
+                  <td>Converts the strings to uppercase</td>
+                </tr>
+                <tr>
+                  <td>valueOf()</td>
+                  <td>Returns the primitive value of a string object</td>
+                </tr>
+              </table>
+            </div>
+          </section>
+          <section class="card-box" id="javascript-section-regular-expression">
+            <h2>Regular Expression</h2>
+          </section>
+          <section class="card" id="javascript-section-regular-expression">
+            <button class="collapsible">Open Collapsible</button>
+            <div class="content">
+              <table>
+                <tr>
+                  <th>Pattern Modifier</th>
+                  <th>Name</th>
+                </tr>
+                <tr>
+                  <td>e</td>
+                  <td>Evaluate Replacement</td>
+                </tr>
+                <tr>
+                  <td>i</td>
+                  <td>Case-insensitive matching</td>
+                </tr>
+                <tr>
+                  <td>g</td>
+                  <td>Global matching</td>
+                </tr>
+                <tr>
+                  <td>m</td>
+                  <td>Multiple line matching</td>
+                </tr>
+                <tr>
+                  <td>s</td>
+                  <td>Treat string as a single line</td>
+                </tr>
+                <tr>
+                  <td>x</td>
+                  <td>Allow comments and whitespace in the pattern</td>
+                </tr>
+                <tr>
+                  <td>u</td>
+                  <td>Ungreedy pattern</td>
+                </tr>
+              </table>
+            </div>
+          </section>
+          <section class="card" id="javascript-section-regular-expression">
+            <button class="collapsible">Open Collapsible</button>
+            <div class="content">
+              <table>
+                <tr>
+                  <td>Brackets</td>
+                  <td>Description</td>
+                </tr>
+                <tr>
+                  <td>[abc]</td>
+                  <td>Finds any characters from a, b and c</td>
+                </tr>
+                <tr>
+                  <td>[^abc]</td>
+                  <td>Searches any character except a, b and c</td>
+                </tr>
+                <tr>
+                  <td>[0-9]</td>
+                  <td>Finds any digit from 0 to 9</td>
+                </tr>
+                <tr>
+                  <td>[A-z]</td>
+                  <td>Finds any character from a to z and A to Z</td>
+                </tr>
+                <tr>
+                  <td>(a | b | c)</td>
+                  <td>Searches any of the alternatives separated with |</td>
+                </tr>
+              </table>
+            </div>
+          </section>
+          <section class="card-box" id="javascript-section-math-numbers">
+            <h2>Math and Numbers</h2>
+          </section>
+          <section class="card-code" id="javascript-section-math-numbers-code">
+            <p>
+              <span class="token-function-name">NaN</span>
+              <span class="token-operator">=</span>
+              <span class="token-comment">Not</span>
+              <span class="token-string">A Number</span>
+            </p>
+          </section>
+          <section class="card" id="javascript-section-math-numbers-table">
+            <button class="collapsible">Open Collapsible</button>
+            <div class="content">
+              <table>
+                <tr>
+                  <th>Number Methods</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>toExponential()</td>
+                  <td>Returns a string with a rounded number written as an exponential notation</td>
+                </tr>
+                <tr>
+                  <td>toFixed()</td>
+                  <td>Returns the string of a number with a specified number of decimals</td>
+                </tr>
+                <tr>
+                  <td>toPrecision()</td>
+                  <td>A string of a number written with a specified length</td>
+                </tr>
+                <tr>
+                  <td>toString()</td>
+                  <td>Returns a number as a string</td>
+                </tr>
+                <tr>
+                  <th>Math Methods</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>abs(n)</td>
+                  <td>Returns a positive value of n</td>
+                </tr>
+                <tr>
+                  <td>acos(n)</td>
+                  <td>Arccosine of n in radians</td>
+                </tr>
+                <tr>
+                  <td>asin(n)</td>
+                  <td>Arcsine of n in radians</td>
+                </tr>
+                <tr>
+                  <td>atan(n)</td>
+                  <td>The arctangent of n in numeric value</td>
+                </tr>
+                <tr>
+                  <td>ceil(n)</td>
+                  <td>The rounded-up value of n</td>
+                </tr>
+                <tr>
+                  <td>cos(n)</td>
+                  <td>Cosine of n</td>
+                </tr>
+                <tr>
+                  <td>exp(n)</td>
+                  <td>Ex of n</td>
+                </tr>
+                <tr>
+                  <td>floor(n)</td>
+                  <td>Rounded down value of n</td>
+                </tr>
+                <tr>
+                  <td>log(n)</td>
+                  <td>The natural logarithm of n</td>
+                </tr>
+                <tr>
+                  <td>max(1,2,3,5,12,42)</td>
+                  <td>Returns the maximum value</td>
+                </tr>
+                <tr>
+                  <td>min(1,2,3,5,12,42)</td>
+                  <td>Returns the minimum value</td>
+                </tr>
+                <tr>
+                  <td>pow(n,m)</td>
+                  <td>n to the power m</td>
+                </tr>
+                <tr>
+                  <td>random()</td>
+                  <td>Returns a random value between 1 and 0</td>
+                </tr>
+                <tr>
+                  <td>sin(n)</td>
+                  <td>The sine of x in radians</td>
+                </tr>
+                <tr>
+                  <td>sqrt(n)</td>
+                  <td>The square root of n</td>
+                </tr>
+                <tr>
+                  <td>tan(n)</td>
+                  <td>The tangent of angle n</td>
+                </tr>
+              </table>
+            </div>
+          </section>
+          <section class="card-box" id="javascript-section-dates">
+            <h2>Dates in JavaScript</h2>
+            <br>
+            <p>Date()= Returns the current date in the form of a new date object</p>
+            <br>
+            <h3>Date Declaration:</h3>
+            <br>
+            <p>Date(yyyy,mm,dd,HH,MM,SS,MS): to create a new date object</p>
+          </section>
+          <section class="card-code" id="javascript-section-dates-code">
+            <p>
+              <span class="token-language">yyyy</span>
+              <span class="token-operator">=</span>
+              <span class="token-language">year</span>
+            </p>
+            <p>
+              <span class="token-language">mm</span>
+              <span class="token-operator">=</span>
+              <span class="token-language">month</span>
+            </p>
+            <p>
+              <span class="token-language">dd</span>
+              <span class="token-operator">=</span>
+              <span class="token-language">day</span>
+            </p>
+            <p>
+              <span class="token-operator">HH</span>
+              <span class="token-operator">=</span>
+              <span class="token-language">Hours</span>
+            </p>
+            <p>
+              <span class="token-operator">MM</span>
+              <span class="token-operator">=</span>
+              <span class="token-language">Minutes</span>
+            </p>
+            <p>
+              <span class="token-operator">SS</span>
+              <span class="token-operator">=</span>
+              <span class="token-language">Seconds</span>
+            </p>
+            <p>
+              <span class="token-operator">MS</span>
+              <span class="token-operator">=</span>
+              <span class="token-language">Milliseconds</span>
+            </p>
+            <p>
+              <span class="token-constant">Date</span>
+              <span class="token-operator">(</span>
+              <span class="token-string">"2019-11-29"</span>
+              <span class="token-operator">)</span>
+              <span class="token-operator">=</span>
+              <span class="token-constant">Date</span>
+              <span class="token-language">declaration</span>
+              <span class="token-conditional">as</span>
+              <span class="token-language">a string</span>
+            </p>
+            <p>
+              <span class="token-constant">Date</span>
+              <span class="token-operator">(</span>
+              <span class="token-string">"2019"</span>
+              <span class="token-operator">)</span>
+              <span class="token-operator">;</span>
+            </p>
+            <p>
+              <span class="token-constant">Date</span>
+              <span class="token-operator">(</span>
+              <span class="token-string">"2019-06-23T12:00:00-09:45"</span>
+              <span class="token-operator">)</span>
+              <span class="token-operator">;</span>
+            </p>
+            <p>
+              <span class="token-constant">Date</span>
+              <span class="token-operator">(</span>
+              <span class="token-string">"June 23 2019"</span>
+              <span class="token-operator">)</span>
+              <span class="token-operator">;</span>
+            </p>
+            <p>
+              <span class="token-constant">Date</span>
+              <span class="token-operator">(</span>
+              <span class="token-string">"Jun 23 2019 07:45:00 GMT+0100 (Tokyo Time)"</span>
+              <span class="token-operator">)</span>
+              <span class="token-operator">;</span>
+            </p>
+          </section>
+          <section class="card-box" id="javascript-section-dates-methods">
+            <h2>Date Methods</h2>
+          </section>
+          <section class="card" id="javascript-section-dates-methods">
+            <button class="collapsible">Open Collapsible</button>
+            <div class="content">
+              <table>
+                <tr>
+                  <th>Get Date Methods</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>getDate()</td>
+                  <td>Get the date from the date object</td>
+                </tr>
+                <tr>
+                  <td>getDay()</td>
+                  <td>Get the weekday</td>
+                </tr>
+                <tr>
+                  <td>getFullYear()</td>
+                  <td>Get the year</td>
+                </tr>
+                <tr>
+                  <td>getHours()</td>
+                  <td>Get the hour(0-23)</td>
+                </tr>
+                <tr>
+                  <td>getMilliseconds()</td>
+                  <td>Get the millisecond</td>
+                </tr>
+                <tr>
+                  <td>getMinutes()</td>
+                  <td>Get the minutes</td>
+                </tr>
+                <tr>
+                  <td>getSeconds()</td>
+                  <td>Get the second</td>
+                </tr>
+                <tr>
+                  <td>getTime()</td>
+                  <td>Get the milliseconds since January 1, 1970</td>
+                </tr>
+                <tr>
+                  <td>getUTCDate()</td>
+                  <td>The day (date) of the month in the specified date according to the universal time (also available for day, month, fullyear, hours, minutes etc.)</td>
+                </tr>
+                <tr>
+                  <td>getMonth()</td>
+                  <td>Get the month(0-11)</td>
+                </tr>
+                <tr>
+                  <th>Set Date Methods</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>setDate()</td>
+                  <td>Sets the date</td>
+                </tr>
+                <tr>
+                  <td>setFullYear()</td>
+                  <td>Sets the year</td>
+                </tr>
+                <tr>
+                  <td>setHours</td>
+                  <td>Sets hours</td>
+                </tr>
+                <tr>
+                  <td>setMilliseconds</td>
+                  <td>Sets milliseconds</td>
+                </tr>
+                <tr>
+                  <td>setMinutes</td>
+                  <td>Sets minutes</td>
+                </tr>
+                <tr>
+                  <td>setMonths()</td>
+                  <td>Sets months</td>
+                </tr>
+                <tr>
+                  <td>setSeconds()</td>
+                  <td>Sets seconds</td>
+                </tr>
+                <tr>
+                  <td>setTime()</td>
+                  <td>Sets the time</td>
+                </tr>
+                <tr>
+                  <td>setUTCDate()</td>
+                  <td>Sets the day of the month for a specified date according to the universal time (also available for day, month, fullyear, hours, minutes etc.)</td>
+                </tr>
+              </table>
+            </div>
+          </section>
+          <section class="card-box" id="javascript-section-dom">
+            <h2>DOM in JavaScript</h2>
+          </section>
+          <section class="card" id="javascript-section-dom">
+            <button class="collapsible">Open Collapsible</button>
+            <div class="content">
+              <table>
+                <tr>
+                  <th>Node Methods</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>appendChid()</td>
+                  <td>Adds a new child node to an element as the last child node</td>
+                </tr>
+                <tr>
+                  <td>cloneNode()</td>
+                  <td>Clones the HTML element</td>
+                </tr>
+                <tr>
+                  <td>compareDocumentPosition()</td>
+                  <td>	Compares the document position of two elements</td>
+                </tr>
+                <tr>
+                  <td>getFeature()</td>
+                  <td>Returns an object that implements the API of a specified feature</td>
+                </tr>
+                <tr>
+                  <td>hasAttributes()</td>
+                  <td>True if element has attributes else it return false</td>
+                </tr>
+                <tr>
+                  <td>hasChildNode()</td>
+                  <td>Returns true if an element has any child nodes, otherwise false</td>
+                </tr>
+                <tr>
+                  <td>insertBefore()</td>
+                  <td>Inserts a new child node before a specified existing child node</td>
+                </tr>
+                <tr>
+                  <td>isDefaultNamespace()</td>
+                  <td>True for default specified namespaceURI else false</td>
+                </tr>
+                <tr>
+                  <td>removeChild()</td>
+                  <td>Removes a child node from an element</td>
+                </tr>
+                <tr>
+                  <td>replaceChild()</td>
+                  <td>Replaces a child node in an element</td>
+                </tr>
+                <tr>
+                  <th>Elements Methods</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>getAttribute()</td>
+                  <td>Returns the attribute value</td>
+                </tr>
+                <tr>
+                  <td>getAttributeNS()</td>
+                  <td>Returns the string value of the attribute with namespace</td>
+                </tr>
+                <tr>
+                  <td>getAttributeNode()</td>
+                  <td>Gets the specific attribute node</td>
+                </tr>
+                <tr>
+                  <td>getAttributeNodeNS()</td>
+                  <td>Returns the attribute node for the attribute with the given namespace</td>
+                </tr>
+                <tr>
+                  <td>getElementsByTagName()</td>
+                  <td>Gets all the elements with a specific tag name</td>
+                </tr>
+                <tr>
+                  <td>getElemetsByTagNameNS()</td>
+                  <td>	Returns a live HTMLCollection of elements with a certain tag name belonging to the given namespace</td>
+                </tr>
+                <tr>
+                  <td>setAttribute()</td>
+                  <td>Sets or changes the specified attribute to a specified value</td>
+                </tr>
+                <tr>
+                  <td>setAttributeNS()</td>
+                  <td>	Adds a new attribute or changes the value of an attribute with the given namespace and name</td>
+                </tr>
+                <tr>
+                  <td>setAttributeNode()</td>
+                  <td>Sets or changes the specified attribute node</td>
+                </tr>
+                <tr>
+                  <td>setAttributeNodeNS()</td>
+                  <td>	Adds a new namespaced attribute node to an element</td>
+                </tr>
+              </table>
+            </div>
+          </section>
+          <section class="card-box" id="javascript-section-events">
+            <ul>
+              <h2>JavaScript Events</h2>
+              <br>
+              <h3>Mouse</h3>
+              <br>
+              <li>onclick</li>
+              <li>oncontextmenu</li>
+              <li>ondblclick</li>
+              <li>onmousedown</li>
+              <li>onmouseenter</li>
+              <li>onmouseeleave</li>
+              <li>onmousemove</li>
+              <li>onmouseover</li>
+              <br>
+              <h3>Keyboard</h3>
+              <br>
+              <li>onkeydown</li>
+              <li>onkeypress</li>
+              <li>onkeyup</li>
+              <br>
+              <h3>Form</h3>
+              <br>
+              <li>onblur</li>
+              <li>onchange</li>
+              <li>onfocus</li>
+              <li>onfocusin</li>
+              <li>onfocusout</li>
+              <li>oninput</li>
+              <li>oninvalid</li>
+              <li>onrest</li>
+              <li>onsearch</li>
+              <li>onselect</li>
+              <li>onsubmit</li>
+              <br>
+              <h3>Drag</h3>
+              <br>
+              <li>ondrag</li>
+              <li>ondragend</li>
+              <li>ondragenter</li>
+              <li>ondragleave</li>
+              <li>ondragover</li>
+              <li>ondragstart</li>
+              <li>ondrop</li>
+              <br>
+              <h3>Media</h3>
+              <br>
+              <li>onabort</li>
+              <li>oncanplay</li>
+              <li>oncanplaythrough</li>
+              <li>ondurationchange</li>
+              <li>onended</li>
+              <li>onerror</li>
+              <li>onloadeddata</li>
+              <li>onloadedmetadata</li>
+              <li>onloadstart</li>
+              <li>onpause</li>
+              <li>onplay</li>
+              <li>onplaying</li>
+              <li>onprogress</li>
+              <li>onratechange</li>
+              <li>onseeked</li>
+              <li>onseeking</li>
+              <li>onstalled</li>
+              <li>onsuspend</li>
+              <li>ontimeupdate</li>
+              <li>onvolumechange</li>
+              <li>onwaiting</li>
+              <br>
+              <br>
+            </ul>
+          </section>
+          <section class="card-box" id="javascript-section-notes">
+            <ul>
+              <h3>Enter your JavaScript notes here...</h3>
+              <br>
+              <li>A variable is a named container that allows us to store data in our code.</li>
+              <li>Control flow is the order in which a computer executes code in a script.</li>
+            </ul>
+          </section>
+          <section class="card-box" id="javascript-section-foot">
+            <a href="https://www.techgeekbuzz.com/blog/javascript-cheat-sheet/">Learn More about JavaScript here!</a>
+          </section>
+        </div>
+      </div>     
+    </main>
+    <footer>
+      <h2>I can code!</h2>
+    </footer>
+
+    <script src="../assets/script.js"></script>
+
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+      </script>
+
+  </body> 
+</html>
