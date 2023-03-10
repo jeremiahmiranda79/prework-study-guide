@@ -123,13 +123,400 @@
         </section>
         
       </div> 
+
+      <div class="card" id="test">
+        <br>
+        <h1>Sand Box</h1>
+        <section class="card-box">
+          <h2>InnerHTML</h2>
+          <br>
+          <p>InnerHTML sets the HTML contents of an element on a web page and often used to modify the contents of an element.</p>
+        </section>
+        <section class="card-box">
+          <h4>Numbers:</h4>
+        </section>
+        <section class="card-code">
+          <span class="token-parameter">document</span>
+          <span class="token-operator">.</span>
+          <span class="token-function-name">getElementsById</span>
+          <span class="token-punctuation">(</span>
+          <span class="token-string">"demo1"</span>
+          <span class="token-punctuation">)</span>
+          <span class="token-operator">.</span>
+          <span class="token-parameter">innerHTML</span>
+          <span class="token-operator">=</span>
+          <span class="token-numeral">5</span>
+          <span class="token-operator">+</span>
+          <span class="token-numeral">6</span>
+          <span class="token-operator">;</span>
+        </section>
+        <section class="card-box">
+          <h3>The text is: <span id="demo1" class="token-class-name"></span></h3>
+          <hr>
+        </section>
+        <section class="card-box">
+          <h4>Strings:</h4>
+        </section>
+        <section class="card-code">
+          <span class="token-parameter">document</span>
+          <span class="token-operator">.</span>
+          <span class="token-function-name">getElementById</span>
+          <span class="token-punctuation">(</span>
+          <span class="token-string">"demo5"</span>
+          <span class="token-punctuation">)</span>
+          <span class="token-operator">.</span>
+          <span class="token-parameter">innerHTML</span>
+          <span class="token-operator">=</span>
+          <span class="token-string">"Tiger's and Bear's"</span>
+          <span class="token-operator">;</span>
+        </section>
+        <section class="card-box">
+          <h3>The text is: <span id="demo5" class="token-class-name"></span></h3>
+          <hr>
+        </section>
+        <section class="card-box">
+          <h2>Function</h2>
+          <br>
+          <p>A function in JavaScript is similar to a procedure—<b>a set of statements that performs a task or calculates a value</b>, but for a procedure to qualify as a function, it should take some input and return an output where there is some obvious relationship between the input and the output.</p>
+        </section>
+        <section class="card-code">
+          <span class="token-parameter">document</span>
+          <span class="token-operator">.</span>
+          <span class="token-function-name">getElementsById</span>
+          <span class="token-punctuation">(</span>
+          <span class="token-string">"demo2"</span>
+          <span class="token-punctuation">)</span>
+          <span class="token-operator">.</span>
+          <span class="token-parameter">innerHTML</span>
+          <span class="token-operator">=</span>
+          <span class="token-function-name">addNumbers</span>
+          <span class="token-punctuation">(</span>
+          <span class="token-numeral">2</span>
+          <span class="token-operator">,</span>
+          <span class="token-numeral">5</span>
+          <span class="token-punctuation">)</span>
+          <span class="token-operator">;</span>
+          <br>
+          <span class="token-keyword">function</span>
+          <span class="token-function-name">addNumbers</span>
+          <span class="token-punctuation">(</span>
+          <span class="token-parameter">x</span>
+          <span class="token-operator">,</span>
+          <span class="token-parameter">y</span>
+          <span class="token-punctuation">)</span>
+          <span class="token-punctuation">{</span>
+            <br>
+            <span class="token-keyword">&nbsp;&nbsp;&nbsp;var</span>
+            <span class="token-parameter">total</span>
+            <span class="token-operator">=</span>
+            <span class="token-numeral">0</span>
+            <span class="token-operator">;</span>
+            <br>
+            <span class="token-parameter">&nbsp;&nbsp;&nbsp;total</span>
+            <span class="token-operator">=</span>
+            <span class="token-parameter">x</span>
+            <span class="token-operator">+</span>
+            <span class="token-parameter">y</span>
+            <span class="token-operator">;</span>
+            <br>
+            <span class="token-conditional">&nbsp;&nbsp;&nbsp;return</span>
+            <span class="token-parameter">total</span>
+            <span class="token-operator">;</span>
+            <br>
+          <span class="token-punctuation">}</span>
+        </section>
+        <section class="card-box">
+          <h3>The text is: <span id="demo2" class="token-class-name"></span></h3>
+          <hr>
+        </section>
+        <section class="card-box">
+          <h2>If / Else Statements</h2>
+          <br>
+          <p>The if/else statement executes a block of code if a specified condition is true. If the condition is false, another block of code can be executed. The if/else statement is a part of JavaScript's "Conditional" Statements, which are used to perform different actions based on different conditions.</p>
+        </section>
+        <section class="card-code">
+          <span class="token-parameter">document</span>
+          <span class="token-operator">.</span>
+          <span class="token-function-name">getElementsById</span>
+          <span class="token-punctuation">(</span>
+          <span class="token-string">"demo3"</span>
+          <span class="token-punctuation">)</span>
+          <span class="token-operator">.</span>
+          <span class="token-parameter">innerHTML</span>
+          <span class="token-operator">=</span>
+          <span class="token-function-name">selectTopic</span>
+          <span class="token-punctuation">(</span>
+          <span class="token-punctuation">)</span>
+          <span class="token-operator">;</span>
+          <br>
+          <span class="token-keyword">var</span>
+          <span class="token-parameter">topics</span>
+          <span class="token-operator">=</span>
+          <span class="token-punctuation">[</span>
+          <span class="token-string">'HTML'</span>
+          <span class="token-operator">,</span>
+          <span class="token-string">'CSS'</span>
+          <span class="token-operator">,<span>
+          <span class="token-string">'Git'</span>
+          <span class="token-operator">,</span>
+          <span class="token-string">'JavaScript'</span>
+          <span class="token-punctuation">]</span>
+          <span class="token-operator">;</span>
+          <br>
+          <span class="token-keyword">var</span>
+          <span class="token-parameter">randomTopics</span>
+          <span class="token-operator">=</span>
+          <span class="token-parameter">topics</span>
+          <span class="token-punctuation">[</span>
+          <span class="token-parameter">Math</span>
+          <span class="token-operator">.</span>
+          <span class="token-function-name">floor</span>
+          <span class="token-punctuation">(</span>
+          <span class="token-parameter">Math</span>
+          <span class="token-operator">.</span>
+          <span class="token-function-name">random</span>
+          <span class="token-punctuation">()</span>
+          <span class="token-operator">*</span>
+          <span class="token-parameter">topics</span>
+          <span class="token-operator">.</span>
+          <span class="token-parameter">length</span>
+          <span class="token-punctuation">)]</span>
+          <span class="token-operator">;</span>
+          <br>
+          <span class="token-keyword">function</span>
+          <span class="token-function-name">selectTopic</span>
+          <span class="token-punctuation">()</span>
+          <span class="token-punctuation">{</span>  
+            <br>
+            <span class="token-conditional">&nbsp;&nbsp;&nbsp;if</span>
+            <span class="token-punctuation">(</span>
+            <span class="token-function-name">randomTopic</span>
+            <span class="token-operator">===</span>
+            <span class="token-string">'HTML'</span>
+            <span class="token-punctuation">){</span>
+            <br>
+              <span class="token-conditional">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return</span>
+              <span class="token-string">"Let's study HTML"</span>
+              <span class="token-operator">;</span>
+              <br>
+            <span class="token-punctuation">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span>
+            <span class="token-conditional">else if</span>
+            <span class="token-punctuation">(</span>
+            <span class="token-function-name">randomTopic</span>
+            <span class="token-operator">===</span>
+            <span class="token-string">'CSS'</span>
+            <span class="token-punctuation">){</span>
+            <br>
+              <span class="token-conditional">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return</span>
+              <span class="token-string">"Let's study CSS"</span>
+              <span class="token-operator">;</span>
+              <br>
+            <span class="token-punctuation">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span>
+            <span class="token-conditional">else if</span>
+            <span class="token-punctuation">(</span>
+            <span class="token-function-name">randomTopic</span>
+            <span class="token-operator">===</span>
+            <span class="token-string">'Git'</span>
+            <span class="token-punctuation">){</span>
+            <br>
+              <span class="token-conditional">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return</span>
+              <span class="token-string">"Let's study Git"</span>
+              <span class="token-operator">;</span>
+              <br>
+            <span class="token-punctuation">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span>
+            <span class="token-conditional">else if</span>
+            <span class="token-punctuation">(</span>
+            <span class="token-function-name">randomTopic</span>
+            <span class="token-operator">===</span>
+            <span class="token-string">'JavaScript'</span>
+            <span class="token-punctuation">){</span>
+            <br>
+              <span class="token-conditional">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return</span>
+              <span class="token-string">"Let's study JavaScript"</span>
+              <span class="token-operator">;</span>
+              <br>
+            <span class="token-punctuation">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span>
+            <span class="token-conditional">else</span>
+            <span class="token-punctuation">{</span>
+            <br>
+              <span class="token-conditional">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return</span>
+              <span class="token-string">"Please try again!"</span>
+              <span class="token-operator">;</span>
+              <br>
+            <span class="token-punctuation">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</span>
+            <br>
+          <span class="token-punctuation">}</span>
+        </section>
+        <section class="card-box">
+          <p><b>Test by clicking the Refresh Page button below:</b></p>
+          <br>
+          <button onClick="window.location.reload();">Refresh Page</button>
+        </section>
+        <section class="card-box">
+          <h3>The text is: <span id="demo3" class="token-class-name"></span></h3>
+          <hr>
+        <br>
+        </section>
+        <section class="card-box">
+          <h2>ForEach with Lists</h2>
+          <br>
+          <p>The forEach() method is an iterative method. It calls a provided callback function once for each element in an array in ascending-index order. ForEach() always returns undefined and is not chainable.</p>
+        </section>
+        <section class="card-code">
+          <span class="token-keyword">let</span>
+          <span class="token-parameter">data</span>
+          <span class="token-operator">=</span>
+          <span class="token-punctuation">[</span>
+          <span class="token-string">'HTML'</span>
+          <span class="token-operator">,</span>
+          <span class="token-string">'CSS'</span>
+          <span class="token-operator">,</span>
+          <span class="token-string">'Git'</span>
+          <span class="token-operator">,</span>
+          <span class="token-string">'JavaScript'</span>
+          <span class="token-punctuation">]</span>
+          <span class="token-operator">;</span>
+          <br>
+          <span class="token-keyword">let</span>
+          <span class="token-parameter">list</span>
+          <span class="token-operator">=</span>
+          <span class="token-parameter">document</span>
+          <span class="token-operator">.</span>
+          <span class="token-function-name">getElementById</span>
+          <span class="token-punctuation">(</span>
+          <span class="token-string">"demo4"</span>
+          <span class="token-punctuation">)</span>
+          <span class="token-operator">;</span>
+          <br>
+          <br>
+          <span class="token-parameter">data</span>
+          <span class="token-operator">.</span>
+          <span class="token-function-name">forEach</span>
+          <span class="token-punctuation">(</span>
+          <span class="token-punctuation">(</span>
+          <span class="token-parameter">item</span>
+          <span class="token-punctuation">)</span>
+          <span class="token-keyword">=&gt;</span>
+          <span class="token-punctuation">{</span>
+          <br>
+            <span class="token-keyword">&nbsp;&nbsp;&nbsp;let</span>
+            <span class="token-parameter">li</span>
+            <span class="token-operator">=</span>
+            <span class="token-parameter">document</span>
+            <span class="token-operator">.</span>
+            <span class="token-function-name">createElement</span>
+            <span class="token-punctuation">(</span>
+            <span class="token-string">"li"</span>
+            <span class="token-punctuation">)</span>
+            <span class="token-operator">;</span>
+            <br>
+            <span class="token-parameter">&nbsp;&nbsp;&nbsp;li</span>
+            <span class="token-operator">.</span>
+            <span class="token-parameter">innerText</span>
+            <span class="token-operator">=</span>
+            <span class="token-parameter">item</span>
+            <span class="token-operator">;</span>
+            <br>
+            <span class="token-parameter">&nbsp;&nbsp;&nbsp;list</span>
+            <span class="token-operator">.</span>
+            <span class="token-function-name">appendChild</span>
+            <span class="token-punctuation">(</span>
+            <span class="token-parameter">li</span>
+            <span class="token-punctuation">)</span>
+            <span class="token-operator">;</span>
+            <br>
+          <span class="token-punctuation">}</span>
+          <span class="token-punctuation">)</span>
+          <span class="token-operator">;</span>
+        </section>
+        <section class="card-box">
+          <h3>The text is: <span id="demo4" class="token-class-name"></span></h3>
+          <hr>
+        </section>
+        <section class="card-box">
+          <h2>Alert Message Box</h2>
+          <br>
+          <p>The alert box takes the focus away from the current window, and forces the user to read the message. Do not overuse this method. It prevents the user from accessing other parts of the page until the alert box is closed.</p>
+        </section>
+        <section class="card-code">
+          <span class="token-language">&lt;</span>
+          <span class="token-keyword">button</span>
+          <span class="token-parameter">&nbsp;type</span>
+          <span class="token-operator">=</span>
+          <span class="token-string">"button"</span>
+          <span class="token-parameter">&nbsp;onclick</span>
+          <span class="token-operator">=</span>
+          <span class="token-string">"</span>
+          <span class="token-function-name">alert</span>
+          <span class="token-punctuation">(</span>
+          <span class="token-string">'Hello World'</span>
+          <span class="token-punctuation">)</span>
+          <span class="token-string">"</span>
+          <span class="token-language">&gt;</span>
+          <span class="token-operator">Click Me!</span>
+          <span class="token-language">&lt;/</span>
+          <span class="token-keyword">button</span>
+          <span class="token-language">&gt;</span>
+        </section>
+        <section class="card-box">
+          <p><b>Test by clicking the button below:</b></p>
+          <br>
+          <button type="button" onclick="alert('Hello World')">Click Me!</button>
+        </section>
+      </div>
     </main>
     <footer>
-      <h2>Jeremiah Miranda</h2>
+      <h2>&copy;2023 Jeremiah Miranda</h2>
     </footer>
 
     <script src="./assets/script.js"></script>
-
+    <script>
+      document.getElementById("demo1").innerHTML = 5 + 6;
+    </script> 
+    <script>
+      document.getElementById("demo2").innerHTML = addNumbers(2, 5);
+      function addNumbers(x, y) {
+        var total = 0
+        total = x + y;
+        return total;
+      }
+    </script>   
+    <script>
+      document.getElementById("demo3").innerHTML = selectTopic();
+      var topics = ['HTML', 'CSS', 'Git', 'JavaScript'];
+      var randomTopic = topics[Math.floor(Math.random() * topics.length)];
+      function selectTopic() {
+        if (randomTopic === 'HTML') {
+            console.log("Let's study HTML!");
+            return "Let's study HTML!";
+          } else if (randomTopic === 'CSS') {
+            console.log("Let's study CSS!");
+            return "Let's study CSS!";
+          } else if (randomTopic === 'Git') {
+            console.log("Let's study Git!");
+            return "Let's study Git!";
+          } else if (randomTopic === 'JavaScript') {
+            console.log("Let's study JavaScript!");
+            return "Let's study JavaScript!";
+          } else {
+            console.log('Please try again!');
+            return "Please try again!";
+          }
+      }   
+    </script>
+    <script>
+      let data = ['HTML', 'CSS', 'Git', 'JavaScript'];
+      let list = document.getElementById("demo4");
+      
+      data.forEach((item) => {
+        let li = document.createElement("li");
+        li.innerText = item;
+        list.appendChild(li);
+      });
+    </script>
+    <script>
+      document.getElementById("demo5").innerHTML = "Tiger's and Bear's";
+    </script>
     <script>
       var coll = document.getElementsByClassName("collapsible");
       var i;
@@ -145,7 +532,6 @@
           } 
         });
       }
-      </script>
-
+    </script>
   </body> 
 </html>
