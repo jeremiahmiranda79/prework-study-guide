@@ -67,7 +67,7 @@ Please refer to the LICENSE in the repo.
 
 ## Badges 🏆
 
-N/A
+![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 
 ## Features
 
