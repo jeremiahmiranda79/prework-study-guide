@@ -1,58 +1,20 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/collapsable.css">
+    <link rel="stylesheet" href="assets/css/stickyheader.css">
     <title>Prework Study Guide</title>
-
-
-    <style>
-      .collapsible {
-        background-color: #777;
-        color: white;
-        cursor: pointer;
-        padding: 18px;
-        width: 100%;
-        border: none;
-        text-align: left;
-        outline: none;
-        font-size: 15px;
-      }
-      
-      .active, .collapsible:hover {
-        background-color: #555;
-      }
-      
-      .collapsible:after {
-        content: '\002B';
-        color: white;
-        font-weight: bold;
-        float: right;
-        margin-left: 5px;
-      }
-      
-      .active:after {
-        content: "\2212";
-      }
-      
-      .content {
-        padding: 0 18px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.2s ease-out;
-        background-color: #f1f1f1;
-      }
-      </style>
   </head>
   <body>
-    <header id="header-top">
-      <h1>Prework Study Guide</h1>
-      <img src="./assets/bowtie-cat.png" alt="Profile image of cat wearing a bow tie."/>
-      <h2>✨ Open the Console to See What's Happening ✨</h2>
-      <br>
+    <div class="top-container">
+      <h1>✨ Prework Study Guide ✨</h1>
+      <img src="assets/img/bowtie-cat.png" alt="Profile image of cat wearing a bow tie."/>
+    </div>
+    <div class="header" id="myHeader">
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -63,8 +25,7 @@
           <li><a href="pages/javascript.html">JavaScript</a></li>
         </ul>
       </nav>
-      <br>
-    </header>
+    </div>
     <main>      
       <div class="card" id="study-guide-section">
         <br>
@@ -81,7 +42,7 @@
           <h2>For information about Bash</h2>
           <br>
           <p>You can use the navigation bar above or select the link below.</p>
-          <br>
+          <br> 
           <a href="pages/bash.html">Find out more about Bash</a>
           <br>
           <h2>For information about HTML</h2>
@@ -341,7 +302,7 @@
         <section class="card-box">
           <p><b>Test by clicking the Refresh Page button below:</b></p>
           <br>
-          <button onClick="window.location.reload();">Refresh Page</button>
+          <button class="button button1" onClick="window.location.reload();">Refresh Page</button>
         </section>
         <section class="card-box">
           <h3>The text is: <span id="demo3" class="token-class-name"></span></h3>
@@ -452,76 +413,20 @@
         <section class="card-box">
           <p><b>Test by clicking the button below:</b></p>
           <br>
-          <button type="button" onclick="alert('Hello World')">Click Me!</button>
+          <!-- <button type="button" onclick="alert('Hello World')">Click Me!</button> -->
+          <button class="button button1" onclick="alert('Hello World')">Click Me!</button>
         </section>
       </div>
     </main>
     <footer>
       <h2>&copy;2023 Jeremiah Miranda</h2>
     </footer>
-    <script src="./assets/script.js"></script>
-    <script>
-      document.getElementById("demo1").innerHTML = 5 + 6;
-    </script> 
-    <script>
-      document.getElementById("demo2").innerHTML = addNumbers(2, 5);
-      function addNumbers(x, y) {
-        var total = 0
-        total = x + y;
-        return total;
-      }
-    </script>   
-    <script>
-      document.getElementById("demo3").innerHTML = selectTopic();
-      var topics = ['HTML', 'CSS', 'Git', 'JavaScript'];
-      var randomTopic = topics[Math.floor(Math.random() * topics.length)];
-      function selectTopic() {
-        if (randomTopic === 'HTML') {
-            console.log("Let's study HTML!");
-            return "Let's study HTML!";
-          } else if (randomTopic === 'CSS') {
-            console.log("Let's study CSS!");
-            return "Let's study CSS!";
-          } else if (randomTopic === 'Git') {
-            console.log("Let's study Git!");
-            return "Let's study Git!";
-          } else if (randomTopic === 'JavaScript') {
-            console.log("Let's study JavaScript!");
-            return "Let's study JavaScript!";
-          } else {
-            console.log('Please try again!');
-            return "Please try again!";
-          }
-      }   
-    </script>
-    <script>
-      let data = ['HTML', 'CSS', 'Git', 'JavaScript'];
-      let list = document.getElementById("demo4");
-      
-      data.forEach((item) => {
-        let li = document.createElement("li");
-        li.innerText = item;
-        list.appendChild(li);
-      });
-    </script>
-    <script>
-      document.getElementById("demo5").innerHTML = "Tiger's and Bear's";
-    </script>
-    <script>
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-      
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.maxHeight){
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-          } 
-        });
-      }
-    </script>
+    <script src="assets/javascript/addition.js"></script>
+    <script src="assets/javascript/collapsable.js"></script>
+    <script src="assets/javascript/conditional.js"></script>
+    <script src="assets/javascript/foreach.js"></script> 
+    <script src="assets/javascript/function.js"></script>
+    <script src="assets/javascript/strings.js"></script>
+    <script src="assets/javascript/stickyheader.js"></script>
   </body> 
 </html>

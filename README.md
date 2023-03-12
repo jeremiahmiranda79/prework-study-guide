@@ -27,19 +27,19 @@ To use this Prework Study Guide, you can review the notes in each section. For s
 
 Use the dropdown bars to reveal more information:
 
-![alt text](assets/Screenshot1.png)
+![alt text](assets/img/Screenshot1.png)
 
 Use the Nav bar to expore more pages:
 
-![alt text](assets/Screenshot2.png)
+![alt text](assets/img/Screenshot2.png)
 
 Use the hyperlinks to navigate to other pages or references:
 
-![alt text](assets/Screenshot3.png)
+![alt text](assets/img/Screenshot3.png)
 
 Use the buttons to see code work in action:
 
-![alt text](assets/Screenshot4.png)
+![alt text](assets/img/Screenshot4.png)
 
 ## Credits
 

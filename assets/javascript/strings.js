@@ -1,0 +1,1 @@
+document.getElementById("demo5").innerHTML = "Tiger's and Bear's";
