@@ -1,0 +1,59 @@
+.text-wht-space {
+  white-space: pre;
+}
+
+.token-string {
+  color: orange;
+}
+
+.token-comment {
+  color: green;
+}
+
+.token-keyword {
+  color: blue;
+}
+
+.token-conditional {
+  color:blueviolet;
+}
+
+.token-function-name {
+  color:darkkhaki;
+}
+
+.token-punctuation {
+  color:gold;
+}
+
+.token-parameter {
+  color:darkturquoise;
+}
+
+.token-operator {
+  color:whitesmoke;
+}
+
+.token-numeral {
+  color:aquamarine;
+}
+
+.token-class-name-known {
+  color: sienna;
+}
+
+.token-language {
+  color:slategray
+}
+
+.token-constant {
+  color:darkgoldenrod
+}
+
+.token-class-name-user {
+  color:darkcyan;
+}
+
+.token-class-name {
+  color:tomato
+}

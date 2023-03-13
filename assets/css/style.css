@@ -3,21 +3,6 @@
     padding: 0;
 }
 
-/* header, */
-/* footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-
-
-    width: 100%;
-    height: 120px;
-    height: fit-content;
-    background-color: blue;
-    color: white;
-    text-align: center;
-} */
-
 h1 {
     text-align: center;
 }
@@ -39,25 +24,12 @@ img {
     margin-right: auto;
 }
 
-/*ul {
-    padding-left: 40px;
-    font-size: 20px;
-}*/
-
-/*p {
-    text-align: center;
-    font-size: 30px;
-}*/
-
 .card a {
     display: block;
     height: auto;
     width: auto;
     margin-left: auto;
     margin-right: auto;
-
-    /* text-align: center; */
-    /* font-size: 30px; */
     text-align: left;
     font-size:  20px;;
 }
@@ -102,109 +74,61 @@ tr:nth-child(even) {
 .card-code {
     width: 80%;
     margin: 40px auto;
-    /*border: 5px solid rgb(156, 154, 154);*/
     border: 5px solid black;
     box-shadow: 5px 10px #474545;
     background-color: black;
     font-size: 20px;
 }
 
-.text-wht-space {
-    white-space: pre;
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  
+    position: relative;  
 }
 
-.token-string {
-    color: orange;
-}
-
-.token-comment {
-    color: green;
-}
-
-.token-keyword {
-    color: blue;
-}
-
-.token-conditional {
-    color:blueviolet;
-}
-
-.token-function-name {
-    color:darkkhaki;
-}
-
-.token-punctuation {
-    color:gold;
-}
-
-.token-parameter {
-    color:darkturquoise;
-}
-
-.token-operator {
-    color:whitesmoke;
-}
-
-.token-numeral {
-    color:aquamarine;
-}
-
-.token-class-name-known {
-    color: sienna;
-}
-
-.token-language {
-    color:slategray
-}
-
-.token-constant {
-    color:darkgoldenrod
-}
-
-.token-class-name-user {
-    color:darkcyan;
-}
-
-.token-class-name {
-    color:tomato
-}
-
-.token-black {
-    /* color: ; */
-}
+/* .button-group .button {
+    background-color: #4CAF50; /* Green */
+    /* border: 1px solid green;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+  } */
 
 .button1 {
-    background-color: white; 
+    background-color: #4CAF50; 
     color: black; 
-    border: 2px solid #4CAF50;
-    font-size: 40px;
-  }
+    border: 2px solid black;
+    
+    border-radius: 8px;
+}  
 
 .button1:hover {
-    background-color: #4CAF50;
-    color: white;
+    background-color: white;
+    color:  #4CAF50;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    
+    border-radius: 8px;
 }
 
-/* Style the header */
-/* .header {
-    padding: 10px 16px;
-    background: #555;
-    color: #f1f1f1;
-  } */
-  
-  /* Page content */
-  .content {
-    padding: 16px;
-  }
-  
-  /* The sticky class is added to the header with JS when it reaches its scroll position */
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 102px;
-  }
+.button-group .button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+.button-group .button:hover {
+    background-color: #3e8e41;
+}   
